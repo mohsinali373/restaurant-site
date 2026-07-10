@@ -420,6 +420,9 @@ button, input, select, textarea {
   body {
     padding-bottom: 56px; /* Avoid overlapping content with mobile bottom bar */
   }
+  .hero-section {
+    padding-bottom: calc(var(--nav-height) + 56px); /* account for mobile bottom bar */
+  }
 }
 
 /* 7. Hero Section */
@@ -436,6 +439,8 @@ button, input, select, textarea {
   background-position: center;
   color: var(--parchment);
   text-align: center;
+  padding-top: var(--nav-height);
+  padding-bottom: var(--nav-height); /* balances the header spacing for visual centering */
 }
 
 .hero-overlay {
@@ -451,7 +456,7 @@ button, input, select, textarea {
   width: 100%;
   max-width: 800px;
   padding: 0 1.5rem;
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 /* Arch Trellis Animation SVG styling */
